@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -580,7 +580,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a7ea367984222ca458385c03be7e6cd1, type: 2}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -633,10 +633,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 469792949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3b0bd3d5dc2e05499b4de9678b7d0e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a2f0619d8fc44b2ebbaf6a14956bb9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SNEAK: {fileID: 469792949}
+  playerBit: {fileID: 0}
+  movement: 0
+  playerStart: {x: 0, y: 0, z: 0}
+  cam: {fileID: 22932116}
 --- !u!54 &469792955
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -665,7 +668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b5cb2c7a18e7904aa2feef5e7913bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  victim: {fileID: 1867409457}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,9 +855,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcce527e6d8005b41a129869b91c8967, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 469792953}
-  smoothSpeed: 0.125
-  offset: {x: 0, y: 200, z: 0}
 --- !u!1 &967848690
 GameObject:
   m_ObjectHideFlags: 0
