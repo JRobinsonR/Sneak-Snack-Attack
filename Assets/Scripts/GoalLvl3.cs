@@ -1,3 +1,6 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 //Add the Unity things at the top.
 
 //Change file type if needed.

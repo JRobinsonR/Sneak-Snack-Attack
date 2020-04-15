@@ -1,4 +1,6 @@
-  
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;  
   
   //Don't forget to include the unity asset stuff at the top ^ I couldn't add them myself.
   
